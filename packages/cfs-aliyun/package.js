@@ -1,6 +1,6 @@
 Package.describe({
   name: 'steedos:cfs-aliyun',
-  version: '0.1.0_5',
+  version: '0.1.0_6',
   summary: 'Aliyun OSS storage adaptger for CollectionFS',
   git: 'https://github.com/yyang/cfs-aliyun.git',
   documentation: 'README.md'

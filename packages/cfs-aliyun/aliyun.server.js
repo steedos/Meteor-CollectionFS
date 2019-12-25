@@ -52,7 +52,7 @@ FS.Store.OSS = function(name, options) {
     secretAccessKey: null, // Required
     endpoint: endpoint,
     httpOptions: {
-      timeout: 6000
+      timeout: 60000
     },
     apiVersion: '2013-10-15' // Required, DO NOT UPDATE
   }, options);
