@@ -204,7 +204,7 @@ FS.FileWorker.saveCopy = function (fsFile, storeName, options) {
     if (!temp_chunk || temp_chunk.is_saveCopy) {
       return;
     }
-    var filepath = path.join(__meteor_bootstrap__.serverDir, '../../../cfs/files/_tempstore/' + temp_chunk.keys["0"]);
+    var filepath = path.join(Creator.steedosStorageDir+'/_tempstore', temp_chunk.keys["0"]);
     if (fs.existsSync(filepath)) {
       var r = FS.TempStore.Tracker.update({
         fileId: fsFile._id,

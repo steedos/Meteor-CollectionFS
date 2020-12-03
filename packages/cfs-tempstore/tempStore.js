@@ -71,7 +71,7 @@ function mountStorage() {
   } else if (Package["steedos:cfs-filesystem"]) {
 
     // use the Filesystem
-    FS.TempStore.Storage = new FS.Store.FileSystem('_tempstore', { internal: true });
+    FS.TempStore.Storage = new FS.Store.FileSystem('_tempstore', { path: Creator.steedosStorageDir+'/_tempstore', internal: true });
   } else {
     throw new Error('FS.TempStore.Storage is not set: Install steedos:cfs-filesystem or steedos:cfs-gridfs or set it manually');
   }
