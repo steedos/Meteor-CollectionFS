@@ -1,7 +1,7 @@
 Package.describe({
   git: 'https://github.com/CollectionFS/Meteor-cfs-worker.git',
   name: 'steedos:cfs-worker',
-  version: '0.1.5_4',
+  version: '0.1.5_5',
   summary: 'CollectionFS, file worker - handles file copies/versions'
 });
 
