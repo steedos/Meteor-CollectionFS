@@ -104,7 +104,6 @@ FS.Store.STEEDOSCLOUD = function (name, opts) {
   var defaultAcl = options.ACL || 'private';
 
   var SteedosApiKey = options.secretAccessKey;
-  console.log('SteedosApiKey: ', SteedosApiKey);
 
   // Remove serviceParams from SA options
   // options = _.omit(options, validS3ServiceParamKeys);
