@@ -88,8 +88,7 @@ AWS.S3.prototype.createWriteStream = function (params, options, SteedosApiKey) {
       var abortMultipartUploadReq = self.abortMultipartUpload({
         Bucket: params.Bucket,
         Key: params.Key,
-        UploadId: multipartUploadID,
-        SteedosApiKey
+        UploadId: multipartUploadID
       });
 
       abortMultipartUploadReq.on('build', function () {
@@ -125,8 +124,7 @@ AWS.S3.prototype.createWriteStream = function (params, options, SteedosApiKey) {
       Bucket: params.Bucket,
       Key: params.Key,
       UploadId: multipartUploadID,
-      PartNumber: localChunkNumber,
-      SteedosApiKey
+      PartNumber: localChunkNumber
     });
 
     uploadPartReq.on('build', function () {
