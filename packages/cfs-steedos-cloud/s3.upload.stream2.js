@@ -1,4 +1,4 @@
-if (!AWS)
+if (!CLOUDAWS)
   return;
 
 var Writable = require('stream').Writable;
@@ -7,7 +7,7 @@ var Writable = require('stream').Writable;
 // https://github.com/nathanpeck/s3-upload-stream/blob/master/lib/s3-upload-stream.js
 // But much is rewritten and adapted to cfs
 
-AWS.S3.prototype.createReadStream = function (params, options, SteedosApiKey) {
+CLOUDAWS.S3.prototype.createReadStream = function (params, options, SteedosApiKey) {
   // Simple wrapper
   // return this.getObject(params).createReadStream();
 
@@ -19,7 +19,7 @@ AWS.S3.prototype.createReadStream = function (params, options, SteedosApiKey) {
 };
 
 // Extend the AWS.S3 API
-AWS.S3.prototype.createWriteStream = function (params, options, SteedosApiKey) {
+CLOUDAWS.S3.prototype.createWriteStream = function (params, options, SteedosApiKey) {
   var self = this;
 
   //Create the writeable stream interface.

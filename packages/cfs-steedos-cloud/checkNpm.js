@@ -37,5 +37,5 @@ if (Meteor.settings && Meteor.settings.cfs && Meteor.settings.cfs.steedosCloud) 
 
   // fs.writeFileSync(sdkVersionMinJsonPath, JSON.stringify(minJson)); 
 
-  AWS = require('aws-sdk');
+  CLOUDAWS = require('aws-sdk');
 }

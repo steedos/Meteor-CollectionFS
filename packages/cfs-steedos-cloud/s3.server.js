@@ -1,4 +1,4 @@
-if (!AWS)
+if (!CLOUDAWS)
   return;
 
 const path = require('path');
@@ -122,7 +122,7 @@ FS.Store.STEEDOSCLOUD = function (name, opts) {
   // serviceParams = _.pick(serviceParams, validS3ServiceParamKeys);
 
   // Create S3 service
-  var S3 = new AWS.S3(serviceParams);
+  var S3 = new CLOUDAWS.S3(serviceParams);
 
   return new FS.StorageAdapter(name, options, {
     typeName: 'storage.s3',

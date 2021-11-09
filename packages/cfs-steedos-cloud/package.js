@@ -1,6 +1,6 @@
 Package.describe({
   name: 'steedos:cfs-steedos-cloud',
-  version: '0.0.4',
+  version: '0.0.5',
   summary: "upload file to kong by aws-sdk",
   git: ""
 });
