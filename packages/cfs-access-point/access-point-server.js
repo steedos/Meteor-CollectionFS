@@ -351,5 +351,5 @@ FS.HTTP.now = function() {
 
 // Start up the basic mount points
 Meteor.startup(function () {
-  mountUrls();
+  // mountUrls(); 下载路由在platform service-files实现
 });
