@@ -1,7 +1,7 @@
 /* global FS, gm */
 
 var PassThrough = require('stream').PassThrough;
-var lengthStream = require('length-stream');
+var lengthStream = require('./length-stream');
 
 FS.Transform = function(options) {
   var self = this;

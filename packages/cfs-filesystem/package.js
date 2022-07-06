@@ -1,3 +1,10 @@
+/*
+ * @Author: sunhaolin@hotoa.com
+ * @Date: 2021-07-15 17:30:38
+ * @LastEditors: sunhaolin@hotoa.com
+ * @LastEditTime: 2022-07-06 10:03:18
+ * @Description: 
+ */
 Package.describe({
   git: 'https://github.com/CollectionFS/Meteor-cfs-filesystem.git',
   name: 'steedos:cfs-filesystem',
@@ -11,7 +18,6 @@ Package.onUse(function(api) {
   api.use('ecmascript@0.1.6');
 
   api.use(['steedos:cfs-base-package@0.0.30_1', 'steedos:cfs-storage-adapter@0.2.3_1']);
-  api.addFiles('checkNpm.js', 'server');
   api.addFiles('filesystem.server.js', 'server');
   api.addFiles('filesystem.client.js', 'client');
 });

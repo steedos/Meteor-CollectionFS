@@ -1,3 +1,10 @@
+/*
+ * @Author: sunhaolin@hotoa.com
+ * @Date: 2021-07-15 17:30:38
+ * @LastEditors: sunhaolin@hotoa.com
+ * @LastEditTime: 2022-07-06 10:04:36
+ * @Description: 
+ */
 Package.describe({
   git: 'https://github.com/CollectionFS/Meteor-cfs-storage-adapter.git',
   name: 'steedos:cfs-storage-adapter',
@@ -26,8 +33,6 @@ Package.onUse(function(api) {
   // We want to make sure that its added to scope for now if installed.
   // We have set a deprecation warning on the transform scope
   api.use('steedos:cfs-graphicsmagick@0.0.18_1', 'server', { weak: true });
-
-  api.addFiles('checkNpm.js', 'server');
 
   api.addFiles([
     'storageAdapter.client.js'
