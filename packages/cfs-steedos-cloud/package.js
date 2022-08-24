@@ -1,6 +1,13 @@
+/*
+ * @Author: sunhaolin@hotoa.com
+ * @Date: 2021-08-13 22:02:02
+ * @LastEditors: sunhaolin@hotoa.com
+ * @LastEditTime: 2022-08-24 16:30:37
+ * @Description: 
+ */
 Package.describe({
   name: 'steedos:cfs-steedos-cloud',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: "upload file to kong by aws-sdk",
   git: ""
 });

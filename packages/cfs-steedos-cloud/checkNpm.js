@@ -1,3 +1,10 @@
+/*
+ * @Author: sunhaolin@hotoa.com
+ * @Date: 2021-08-13 22:02:02
+ * @LastEditors: sunhaolin@hotoa.com
+ * @LastEditTime: 2022-08-24 16:29:49
+ * @Description: 
+ */
 import {
   checkNpmVersions
 } from 'meteor/tmeasday:check-npm-versions';
@@ -5,7 +12,7 @@ import {
 const fs = require('fs');
 const path = require('path')
 
-if (Meteor.settings && Meteor.settings.cfs && Meteor.settings.cfs.steedosCloud) {
+if (Meteor.settings && Meteor.settings.public && Meteor.settings.public.cfs && Meteor.settings.public.cfs.store === 'STEEDOSCLOUD') {
   checkNpmVersions({
     'aws-sdk': "^2.0.23"
   }, 'steedos:cfs-steedos-cloud');
